@@ -9,7 +9,7 @@ const SideBar = () => {
 
   return (
     <StyledSideBar>
-      <SideBarWrapper title="SOOSOO">
+      <SideBarWrapper title="MY CLOUD">
         <NavLink
           to="/main"
           className={

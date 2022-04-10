@@ -20,7 +20,7 @@ export const StyledLogo = styled.div`
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  width: 164px;
+  width: 200px;
 `;
 
 export const NavLogo = styled.img`

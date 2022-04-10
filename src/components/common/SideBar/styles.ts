@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledSideBar = styled.section`
   position: fixed;
-  width: 216px;
+  width: 180px;
   height: calc(100vh - 46px);
   top: 46px;
   background-color: ${(props) => props.theme.white};
