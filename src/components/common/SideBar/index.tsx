@@ -16,17 +16,23 @@ const SideBar = () => {
             path === "/main" ? "nested-nav-link-active" : "nested-nav-link"
           }
         >
-          홈
+          Home
         </NavLink>
         <NavLink
-          to="/kindergarten"
+          to="/doc"
           className={
-            path === "/kindergarten"
-              ? "nested-nav-link-active"
-              : "nested-nav-link"
+            path === "/doc" ? "nested-nav-link-active" : "nested-nav-link"
           }
         >
-          우리 유치원
+          Doc
+        </NavLink>
+        <NavLink
+          to="/file"
+          className={
+            path === "/file" ? "nested-nav-link-active" : "nested-nav-link"
+          }
+        >
+          File
         </NavLink>
       </SideBarWrapper>
     </StyledSideBar>

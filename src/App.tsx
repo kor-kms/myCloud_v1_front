@@ -10,14 +10,20 @@ const App = () => {
   return (
     <>
       {/* 로그인페이지(ex localhost:3000) 일 때 Nav 및 SideBar컴포넌트 없애기*/}
-      {window.location.pathname === "/" || (
+      {/* {window.location.pathname === "/" || (
         <>
           <Nav />
           <SideBar />
         </>
-      )}
+      )} */}
+      <Nav />
+      <SideBar />
       <Routes>
-        <Route path="/" element={<Pages.LoginPage />} />
+        {/* <Route path="/" element={<Pages.LoginPage />} /> */}
+        <Route path="/" element={<Pages.MainPage />} />
+        <Route path="/main" element={<Pages.MainPage />} />
+        <Route path="/doc" element={<Pages.DocPage />} />
+        <Route path="/file" element={<Pages.FilePage />} />
         <Route path="/*" element={<Pages.NotFoundPage />} />
       </Routes>
     </>

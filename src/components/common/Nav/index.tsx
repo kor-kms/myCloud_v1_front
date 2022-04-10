@@ -9,7 +9,7 @@ const Nav = () => {
     <StyledNav>
       <StyledLogo onClick={() => navigate("/")}>
         <NavLogo
-          src="https://discussionskorea.apple.com/public/assets/avatars/SYSTEM_DEFAULT_AVATAR_EN_4.png"
+          src="https://www.emojiall.com/images/240/apple/2601.png?ezimgfmt=rs:240x240/rscb2/ng:webp/ngcb2"
           alt="LOGO"
         />
         <NavTitle>soosoo</NavTitle>
