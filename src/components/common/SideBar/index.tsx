@@ -10,19 +10,23 @@ import { SideBarContentsAtom } from "../../../store/sideBar";
 const SideBar = () => {
   const path: string = usePathParams();
   const [contentOpen, setContentOpen] =
-    useRecoilState<boolean>(SideBarContentsAtom);
+    useRecoilState<Number[]>(SideBarContentsAtom);
 
-  useEffect(() => {
-    setContentOpen(true);
-  }, [path, setContentOpen]);
+  const handleOpen = (index: Number) => {
+    if (contentOpen.includes(index)) {
+      setContentOpen(contentOpen.filter((id) => id !== index));
+    } else {
+      setContentOpen([...contentOpen, index]);
+    }
+  };
 
   return (
     <StyledSideBar>
       <SideBarWrapper title="MY CLOUD">
         <SideBarItemWrapper
-          isOpen={contentOpen}
+          isOpen={contentOpen.includes(0) ? true : false}
           title={"Doc"}
-          handleClick={() => setContentOpen((prev) => !prev)}
+          handleClick={() => handleOpen(0)}
         >
           <NavLink
             to="/note"
@@ -51,9 +55,9 @@ const SideBar = () => {
         </SideBarItemWrapper>
 
         <SideBarItemWrapper
-          isOpen={contentOpen}
+          isOpen={contentOpen.includes(1) ? true : false}
           title={"File"}
-          handleClick={() => setContentOpen((prev) => !prev)}
+          handleClick={() => handleOpen(1)}
         >
           <NavLink
             to="/picture"

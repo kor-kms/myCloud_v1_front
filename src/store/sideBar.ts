@@ -1,6 +1,6 @@
 import { atom } from "recoil";
 
-export const SideBarContentsAtom = atom<boolean>({
+export const SideBarContentsAtom = atom<Number[]>({
   key: "SideBarContentsAtom",
-  default: false,
+  default: [],
 });
