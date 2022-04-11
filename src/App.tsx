@@ -22,8 +22,11 @@ const App = () => {
         {/* <Route path="/" element={<Pages.LoginPage />} /> */}
         <Route path="/" element={<Pages.MainPage />} />
         <Route path="/main" element={<Pages.MainPage />} />
-        <Route path="/doc" element={<Pages.DocPage />} />
-        <Route path="/file" element={<Pages.FilePage />} />
+        <Route path="/note" element={<Pages.NotePage />} />
+        <Route path="/self" element={<Pages.SelfPage />} />
+        <Route path="/tech" element={<Pages.TechPage />} />
+        <Route path="/picture" element={<Pages.PicturePage />} />
+        <Route path="/etc" element={<Pages.EtcPage />} />
         <Route path="/*" element={<Pages.NotFoundPage />} />
       </Routes>
     </>

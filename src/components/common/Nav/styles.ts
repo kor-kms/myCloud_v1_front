@@ -33,7 +33,7 @@ export const NavTitle = styled.span`
   font-size: 1.75rem;
   letter-spacing: 2px;
   font-weight: bolder;
-  color: ${(props) => props.theme.mainColor};
+  color: ${(props) => props.theme.white};
   cursor: pointer;
 `;
 

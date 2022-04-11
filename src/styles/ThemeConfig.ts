@@ -5,9 +5,10 @@ export const ThemeConfig: IThemeConfig = {
   black: "#000000",
   white: "#ffffff",
   gray: "#ebedee",
-  navBg: "#ffc078",
+  navBg: "#050837",
   lightMainColor: "#fdf1e8",
   darkGray: "#e7e6e6",
   fontGray: "#a5a5a5",
   interfaceBg: "#f7f9fc",
+  darkMode: "#121212",
 };

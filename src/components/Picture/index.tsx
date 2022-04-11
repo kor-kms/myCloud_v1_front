@@ -1,12 +1,12 @@
 import { memo } from "react";
 import { StyledPageWrapper } from "../common/PageWrapper/styles";
 
-const File = () => {
+const Picture = () => {
   return (
     <StyledPageWrapper>
-      <p>File</p>
+      <p>Picture</p>
     </StyledPageWrapper>
   );
 };
 
-export default memo(File);
+export default memo(Picture);

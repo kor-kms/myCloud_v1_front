@@ -11,5 +11,6 @@ declare module "styled-components" {
     darkGray: string;
     fontGray: string;
     interfaceBg: string;
+    darkMode: string;
   }
 }
